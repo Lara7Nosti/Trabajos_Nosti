@@ -8,3 +8,13 @@ C:\Users\lara0_000\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\De
 C:\Users\lara0_000\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.exe
 C:\Users\lara0_000\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.pdb
 C:\Users\lara0_000\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.Form1.resources
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\bin\Debug\MiniEditor.exe.config
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\bin\Debug\MiniEditor.exe
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\bin\Debug\MiniEditor.pdb
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.Form1.resources
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.Properties.Resources.resources
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.exe
+C:\Users\Alumno\Desktop\Trabajos_Nosti\Laboratorio_Trabajos\MiniEditor\obj\Debug\MiniEditor.pdb

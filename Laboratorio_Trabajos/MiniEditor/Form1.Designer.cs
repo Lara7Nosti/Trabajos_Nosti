@@ -45,22 +45,23 @@ namespace MiniEditor
             this.Copiar = new System.Windows.Forms.ToolStripMenuItem();
             this.Cortar = new System.Windows.Forms.ToolStripMenuItem();
             this.Pegar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.Seleccionar_todo = new System.Windows.Forms.ToolStripMenuItem();
             this.Borrar_todo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Texto = new System.Windows.Forms.ToolStripMenuItem();
             this.Tipografia = new System.Windows.Forms.ToolStripMenuItem();
             this.Color = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.botCopiar = new System.Windows.Forms.ToolStripButton();
             this.botCortar = new System.Windows.Forms.ToolStripButton();
             this.botPegar = new System.Windows.Forms.ToolStripButton();
             this.TSComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.Fondo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -116,6 +117,7 @@ namespace MiniEditor
             this.Guardar_como.Name = "Guardar_como";
             this.Guardar_como.Size = new System.Drawing.Size(180, 22);
             this.Guardar_como.Text = "Guardar como";
+            this.Guardar_como.Click += new System.EventHandler(this.Guardar_como_Click);
             // 
             // toolStripSeparator2
             // 
@@ -191,6 +193,11 @@ namespace MiniEditor
             this.Pegar.Text = "Pegar";
             this.Pegar.Click += new System.EventHandler(this.Pegar_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
+            // 
             // Seleccionar_todo
             // 
             this.Seleccionar_todo.Name = "Seleccionar_todo";
@@ -208,34 +215,14 @@ namespace MiniEditor
             this.Borrar_todo.Text = "Borrar todo";
             this.Borrar_todo.Click += new System.EventHandler(this.Borrar_todo_Click);
             // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.botCopiar,
-            this.botCortar,
-            this.botPegar,
-            this.TSComboBox1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(701, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(13, 53);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(676, 291);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
-            // 
             // Texto
             // 
             this.Texto.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tipografia,
-            this.Color});
+            this.Color,
+            this.Fondo});
             this.Texto.Name = "Texto";
-            this.Texto.Size = new System.Drawing.Size(48, 20);
+            this.Texto.Size = new System.Drawing.Size(47, 20);
             this.Texto.Text = "Texto";
             // 
             // Tipografia
@@ -251,6 +238,19 @@ namespace MiniEditor
             this.Color.Size = new System.Drawing.Size(180, 22);
             this.Color.Text = "Color";
             this.Color.Click += new System.EventHandler(this.Color_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.botCopiar,
+            this.botCortar,
+            this.botPegar,
+            this.TSComboBox1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(701, 25);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // botCopiar
             // 
@@ -301,14 +301,24 @@ namespace MiniEditor
             this.TSComboBox1.Size = new System.Drawing.Size(121, 25);
             this.TSComboBox1.SelectedIndexChanged += new System.EventHandler(this.cambiar_tamaño);
             // 
-            // toolStripSeparator4
+            // richTextBox1
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
+            this.richTextBox1.Location = new System.Drawing.Point(13, 53);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(676, 291);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // Fondo
+            // 
+            this.Fondo.Name = "Fondo";
+            this.Fondo.Size = new System.Drawing.Size(180, 22);
+            this.Fondo.Text = "Fondo";
+            this.Fondo.Click += new System.EventHandler(this.Fondo_Click);
             // 
             // Form1
             // 
@@ -363,6 +373,7 @@ namespace MiniEditor
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem Fondo;
     }
 }
 

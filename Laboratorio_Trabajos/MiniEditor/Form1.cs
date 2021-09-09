@@ -39,6 +39,19 @@ namespace MiniEditor
             }
         }
 
+        private void Guardar_como_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = "texto.rtf";
+            var guar = saveFileDialog1.ShowDialog();
+            if (guar == DialogResult.OK)
+            {
+                using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
+                {
+                    guardar_archivo.WriteLine(richTextBox1.Text);
+                }
+            }
+        }
+
         private void Cerrar_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
@@ -95,6 +108,12 @@ namespace MiniEditor
             {
                 richTextBox1.ForeColor = colorDialog1.Color;
             }
+        }
+
+        private void Fondo_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            richTextBox1.BackColor = colorDialog1.Color;
         }
 
         private void cambiar_tamaño(object sender, EventArgs e)
