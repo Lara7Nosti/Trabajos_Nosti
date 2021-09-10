@@ -33,11 +33,10 @@ namespace MiniEditor
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.Archivo = new System.Windows.Forms.ToolStripMenuItem();
             this.Abrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.Nuevo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Guardar = new System.Windows.Forms.ToolStripMenuItem();
             this.Guardar_como = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.Cerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.Edicion = new System.Windows.Forms.ToolStripMenuItem();
             this.Deshacer = new System.Windows.Forms.ToolStripMenuItem();
             this.Repetir = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,17 +51,19 @@ namespace MiniEditor
             this.Tipografia = new System.Windows.Forms.ToolStripMenuItem();
             this.Color = new System.Windows.Forms.ToolStripMenuItem();
             this.Fondo = new System.Windows.Forms.ToolStripMenuItem();
+            this.Imagen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.botGuardar = new System.Windows.Forms.ToolStripButton();
+            this.botGuardar_como = new System.Windows.Forms.ToolStripButton();
+            this.TSComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.botCopiar = new System.Windows.Forms.ToolStripButton();
             this.botCortar = new System.Windows.Forms.ToolStripButton();
             this.botPegar = new System.Windows.Forms.ToolStripButton();
-            this.TSComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.Imagen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,11 +73,10 @@ namespace MiniEditor
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Archivo,
             this.Edicion,
-            this.Texto,
-            this.Imagen});
+            this.Texto});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(701, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(511, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,11 +84,10 @@ namespace MiniEditor
             // 
             this.Archivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Abrir,
+            this.Nuevo,
             this.toolStripSeparator1,
             this.Guardar,
-            this.Guardar_como,
-            this.toolStripSeparator2,
-            this.Cerrar});
+            this.Guardar_como});
             this.Archivo.Name = "Archivo";
             this.Archivo.Size = new System.Drawing.Size(60, 20);
             this.Archivo.Text = "Archivo";
@@ -100,6 +99,14 @@ namespace MiniEditor
             this.Abrir.Size = new System.Drawing.Size(156, 22);
             this.Abrir.Text = "Abrir";
             this.Abrir.Click += new System.EventHandler(this.Abrir_Click);
+            // 
+            // Nuevo
+            // 
+            this.Nuevo.Name = "Nuevo";
+            this.Nuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.Nuevo.Size = new System.Drawing.Size(156, 22);
+            this.Nuevo.Text = "Nuevo";
+            this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
             // 
             // toolStripSeparator1
             // 
@@ -120,19 +127,6 @@ namespace MiniEditor
             this.Guardar_como.Size = new System.Drawing.Size(156, 22);
             this.Guardar_como.Text = "Guardar como";
             this.Guardar_como.Click += new System.EventHandler(this.Guardar_como_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(153, 6);
-            // 
-            // Cerrar
-            // 
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F14)));
-            this.Cerrar.Size = new System.Drawing.Size(156, 22);
-            this.Cerrar.Text = "Cerrar";
-            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // Edicion
             // 
@@ -222,44 +216,91 @@ namespace MiniEditor
             this.Texto.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tipografia,
             this.Color,
-            this.Fondo});
+            this.Fondo,
+            this.Imagen});
             this.Texto.Name = "Texto";
-            this.Texto.Size = new System.Drawing.Size(48, 20);
+            this.Texto.Size = new System.Drawing.Size(47, 20);
             this.Texto.Text = "Texto";
             // 
             // Tipografia
             // 
             this.Tipografia.Name = "Tipografia";
-            this.Tipografia.Size = new System.Drawing.Size(180, 22);
+            this.Tipografia.Size = new System.Drawing.Size(127, 22);
             this.Tipografia.Text = "Tipografía";
             this.Tipografia.Click += new System.EventHandler(this.Tipografia_Click);
             // 
             // Color
             // 
             this.Color.Name = "Color";
-            this.Color.Size = new System.Drawing.Size(180, 22);
+            this.Color.Size = new System.Drawing.Size(127, 22);
             this.Color.Text = "Color";
             this.Color.Click += new System.EventHandler(this.Color_Click);
             // 
             // Fondo
             // 
             this.Fondo.Name = "Fondo";
-            this.Fondo.Size = new System.Drawing.Size(180, 22);
+            this.Fondo.Size = new System.Drawing.Size(127, 22);
             this.Fondo.Text = "Fondo";
             this.Fondo.Click += new System.EventHandler(this.Fondo_Click);
+            // 
+            // Imagen
+            // 
+            this.Imagen.Name = "Imagen";
+            this.Imagen.Size = new System.Drawing.Size(127, 22);
+            this.Imagen.Text = "s";
+            this.Imagen.Click += new System.EventHandler(this.Imagen_Click_1);
             // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.botGuardar,
+            this.botGuardar_como,
+            this.TSComboBox1,
             this.botCopiar,
             this.botCortar,
-            this.botPegar,
-            this.TSComboBox1});
+            this.botPegar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(701, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(511, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // botGuardar
+            // 
+            this.botGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.botGuardar.Image = ((System.Drawing.Image)(resources.GetObject("botGuardar.Image")));
+            this.botGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.botGuardar.Name = "botGuardar";
+            this.botGuardar.Size = new System.Drawing.Size(23, 22);
+            this.botGuardar.Text = "Guardar";
+            // 
+            // botGuardar_como
+            // 
+            this.botGuardar_como.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.botGuardar_como.Image = ((System.Drawing.Image)(resources.GetObject("botGuardar_como.Image")));
+            this.botGuardar_como.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.botGuardar_como.Name = "botGuardar_como";
+            this.botGuardar_como.Size = new System.Drawing.Size(23, 22);
+            this.botGuardar_como.Text = "Guardar como";
+            // 
+            // TSComboBox1
+            // 
+            this.TSComboBox1.Items.AddRange(new object[] {
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "20",
+            "24",
+            "28",
+            "32",
+            "36",
+            "40",
+            "48"});
+            this.TSComboBox1.Name = "TSComboBox1";
+            this.TSComboBox1.Size = new System.Drawing.Size(121, 25);
+            this.TSComboBox1.SelectedIndexChanged += new System.EventHandler(this.cambiar_tamaño);
             // 
             // botCopiar
             // 
@@ -291,33 +332,15 @@ namespace MiniEditor
             this.botPegar.Text = "Pegar";
             this.botPegar.Click += new System.EventHandler(this.Pegar_Click);
             // 
-            // TSComboBox1
-            // 
-            this.TSComboBox1.Items.AddRange(new object[] {
-            "10",
-            "12",
-            "14",
-            "16",
-            "18",
-            "20",
-            "24",
-            "28",
-            "32",
-            "36",
-            "40",
-            "48"});
-            this.TSComboBox1.Name = "TSComboBox1";
-            this.TSComboBox1.Size = new System.Drawing.Size(121, 25);
-            this.TSComboBox1.SelectedIndexChanged += new System.EventHandler(this.cambiar_tamaño);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 49);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(701, 307);
+            this.richTextBox1.Size = new System.Drawing.Size(511, 308);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // openFileDialog1
             // 
@@ -328,24 +351,19 @@ namespace MiniEditor
             // 
             this.saveFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
             // 
-            // Imagen
-            // 
-            this.Imagen.Name = "Imagen";
-            this.Imagen.Size = new System.Drawing.Size(59, 20);
-            this.Imagen.Text = "Imagen";
-            this.Imagen.Click += new System.EventHandler(this.Imagen_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 356);
+            this.ClientSize = new System.Drawing.Size(511, 357);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Mini Editor de Texto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -365,8 +383,6 @@ namespace MiniEditor
         private System.Windows.Forms.ToolStripMenuItem Guardar;
         private System.Windows.Forms.ToolStripMenuItem Guardar_como;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem Cerrar;
         private System.Windows.Forms.ToolStripMenuItem Edicion;
         private System.Windows.Forms.ToolStripMenuItem Deshacer;
         private System.Windows.Forms.ToolStripMenuItem Repetir;
@@ -389,7 +405,10 @@ namespace MiniEditor
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ToolStripMenuItem Fondo;
+        private System.Windows.Forms.ToolStripMenuItem Nuevo;
         private System.Windows.Forms.ToolStripMenuItem Imagen;
+        private System.Windows.Forms.ToolStripButton botGuardar;
+        private System.Windows.Forms.ToolStripButton botGuardar_como;
     }
 }
 

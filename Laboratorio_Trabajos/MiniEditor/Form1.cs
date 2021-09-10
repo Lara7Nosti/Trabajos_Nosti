@@ -17,31 +17,69 @@ namespace MiniEditor
             InitializeComponent();
         }
 
-        private void Abrir_Click(object sender, EventArgs e) //Modificar
+        bool estado = false;
+        bool guardo = true;
+
+        private void Abrir_Click(object sender, EventArgs e)
         {
-            try
+            var n = openFileDialog1.ShowDialog();
+            if ((n == DialogResult.OK) && (guardo == true))
             {
-                string r;
-                openFileDialog1.ShowDialog();
-                System.IO.StreamReader arch = new System.IO.StreamReader(openFileDialog1.FileName);
-                r = arch.ReadLine();
-                richTextBox1.Text = r.ToString();
+                richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                estado = true;
+                guardo = true;
             }
-            catch (Exception ex) { }
+            else if ((n == DialogResult.OK) && (guardo == false))
+            {
+                DialogResult = MessageBox.Show("¿Esta seguro de abrir otro archivo sin guardar?", "¡Un Momento!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (DialogResult == DialogResult.Yes)
+                {
+                    richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                    estado = true;
+                    guardo = true;
+                }
+                if (DialogResult == DialogResult.No)
+                {
+                    Guardar_Click(null, null);
+                    Abrir_Click(null, null);
+                }
+            }
         }
 
-        private void Guardar_Click(object sender, EventArgs e) //Modificar
+        private void Nuevo_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.DefaultExt = "rtf";
-            saveFileDialog1.FileName = "fileName";
-            saveFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
-
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if (guardo == true)
             {
-                richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
-                //Form1. = saveFileDialog1.FileName;
-                //string codigo = richTextBox1.SelectedRtf;
-                //MessageBox.Show(codigo);
+                richTextBox1.Clear();
+                estado = false;
+                guardo = true;
+            }
+            else
+            {
+                DialogResult = MessageBox.Show("¿Esta seguro de crear un nuevo archivo sin guardar?", "¡Un Momento!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (DialogResult == DialogResult.Yes)
+                {
+                    richTextBox1.Clear();
+                    estado = false;
+                    guardo = true;
+                }
+                else if (DialogResult == DialogResult.No)
+                {
+                    Guardar_Click(null, null);
+                }
+            }
+        }
+
+        private void Guardar_Click(object sender, EventArgs e)
+        {
+            if (estado == false)
+            {
+                Guardar_como_Click(null, null);
+            }
+            else
+            {
+                richTextBox1.SaveFile(openFileDialog1.FileName);
+                guardo = true;
             }
         }
         
@@ -54,12 +92,9 @@ namespace MiniEditor
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                estado = true;
+                guardo = true;
             }
-        }
-
-        private void Cerrar_Click(object sender, EventArgs e) //Completar
-        {
-            Environment.Exit(0);
         }
 
         private void Deshacer_Click(object sender, EventArgs e)
@@ -127,7 +162,7 @@ namespace MiniEditor
             }
         }
 
-        private void Imagen_Click(object sender, EventArgs e)
+        private void Imagen_Click_1(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "Imagen |*.jpg;*.png";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -135,6 +170,32 @@ namespace MiniEditor
                 Clipboard.SetImage(Image.FromFile(openFileDialog1.FileName));
                 richTextBox1.Paste();
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (guardo == false)
+            {
+                DialogResult = MessageBox.Show("No guardaste el archivo ¿Esta seguro de cerrar?", "¡Espera!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                if (DialogResult == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else if (DialogResult == DialogResult.No)
+                {
+                    Guardar_Click(null, null);
+                    e.Cancel = true;
+                }
+                else if (DialogResult == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            guardo = false;
         }
     }
 }
