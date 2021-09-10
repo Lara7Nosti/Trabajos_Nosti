@@ -51,6 +51,7 @@ namespace MiniEditor
             this.Texto = new System.Windows.Forms.ToolStripMenuItem();
             this.Tipografia = new System.Windows.Forms.ToolStripMenuItem();
             this.Color = new System.Windows.Forms.ToolStripMenuItem();
+            this.Fondo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.botCopiar = new System.Windows.Forms.ToolStripButton();
             this.botCortar = new System.Windows.Forms.ToolStripButton();
@@ -61,7 +62,7 @@ namespace MiniEditor
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.Fondo = new System.Windows.Forms.ToolStripMenuItem();
+            this.Imagen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +72,8 @@ namespace MiniEditor
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Archivo,
             this.Edicion,
-            this.Texto});
+            this.Texto,
+            this.Imagen});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(701, 24);
@@ -95,40 +97,40 @@ namespace MiniEditor
             // 
             this.Abrir.Name = "Abrir";
             this.Abrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.Abrir.Size = new System.Drawing.Size(180, 22);
+            this.Abrir.Size = new System.Drawing.Size(156, 22);
             this.Abrir.Text = "Abrir";
             this.Abrir.Click += new System.EventHandler(this.Abrir_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
             // 
             // Guardar
             // 
             this.Guardar.Name = "Guardar";
             this.Guardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.Guardar.Size = new System.Drawing.Size(180, 22);
+            this.Guardar.Size = new System.Drawing.Size(156, 22);
             this.Guardar.Text = "Guardar";
             this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // Guardar_como
             // 
             this.Guardar_como.Name = "Guardar_como";
-            this.Guardar_como.Size = new System.Drawing.Size(180, 22);
+            this.Guardar_como.Size = new System.Drawing.Size(156, 22);
             this.Guardar_como.Text = "Guardar como";
             this.Guardar_como.Click += new System.EventHandler(this.Guardar_como_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(153, 6);
             // 
             // Cerrar
             // 
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F14)));
-            this.Cerrar.Size = new System.Drawing.Size(180, 22);
+            this.Cerrar.Size = new System.Drawing.Size(156, 22);
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
@@ -222,7 +224,7 @@ namespace MiniEditor
             this.Color,
             this.Fondo});
             this.Texto.Name = "Texto";
-            this.Texto.Size = new System.Drawing.Size(47, 20);
+            this.Texto.Size = new System.Drawing.Size(48, 20);
             this.Texto.Text = "Texto";
             // 
             // Tipografia
@@ -238,6 +240,13 @@ namespace MiniEditor
             this.Color.Size = new System.Drawing.Size(180, 22);
             this.Color.Text = "Color";
             this.Color.Click += new System.EventHandler(this.Color_Click);
+            // 
+            // Fondo
+            // 
+            this.Fondo.Name = "Fondo";
+            this.Fondo.Size = new System.Drawing.Size(180, 22);
+            this.Fondo.Text = "Fondo";
+            this.Fondo.Click += new System.EventHandler(this.Fondo_Click);
             // 
             // toolStrip1
             // 
@@ -303,22 +312,28 @@ namespace MiniEditor
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(13, 53);
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 49);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(676, 291);
+            this.richTextBox1.Size = new System.Drawing.Size(701, 307);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
             // 
-            // Fondo
+            // saveFileDialog1
             // 
-            this.Fondo.Name = "Fondo";
-            this.Fondo.Size = new System.Drawing.Size(180, 22);
-            this.Fondo.Text = "Fondo";
-            this.Fondo.Click += new System.EventHandler(this.Fondo_Click);
+            this.saveFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
+            // 
+            // Imagen
+            // 
+            this.Imagen.Name = "Imagen";
+            this.Imagen.Size = new System.Drawing.Size(59, 20);
+            this.Imagen.Text = "Imagen";
+            this.Imagen.Click += new System.EventHandler(this.Imagen_Click);
             // 
             // Form1
             // 
@@ -374,6 +389,7 @@ namespace MiniEditor
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ToolStripMenuItem Fondo;
+        private System.Windows.Forms.ToolStripMenuItem Imagen;
     }
 }
 

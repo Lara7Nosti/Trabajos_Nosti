@@ -17,42 +17,47 @@ namespace MiniEditor
             InitializeComponent();
         }
 
-        private void Abrir_Click(object sender, EventArgs e)
+        private void Abrir_Click(object sender, EventArgs e) //Modificar
         {
-            string r;
-            openFileDialog1.ShowDialog();
-            System.IO.StreamReader arch = new System.IO.StreamReader(openFileDialog1.FileName);
-            r = arch.ReadLine();
-            richTextBox1.Text = r.ToString();
+            try
+            {
+                string r;
+                openFileDialog1.ShowDialog();
+                System.IO.StreamReader arch = new System.IO.StreamReader(openFileDialog1.FileName);
+                r = arch.ReadLine();
+                richTextBox1.Text = r.ToString();
+            }
+            catch (Exception ex) { }
         }
 
-        private void Guardar_Click(object sender, EventArgs e)
+        private void Guardar_Click(object sender, EventArgs e) //Modificar
         {
-            saveFileDialog1.FileName = "texto.rtf";
-            var guar = saveFileDialog1.ShowDialog();
-            if (guar == DialogResult.OK)
+            saveFileDialog1.DefaultExt = "rtf";
+            saveFileDialog1.FileName = "fileName";
+            saveFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
-                {
-                    guardar_archivo.WriteLine(richTextBox1.Text);
-                }
+                richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                //Form1. = saveFileDialog1.FileName;
+                //string codigo = richTextBox1.SelectedRtf;
+                //MessageBox.Show(codigo);
             }
         }
-
+        
         private void Guardar_como_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.FileName = "texto.rtf";
-            var guar = saveFileDialog1.ShowDialog();
-            if (guar == DialogResult.OK)
+            saveFileDialog1.DefaultExt = "rtf";
+            saveFileDialog1.FileName = "fileName";
+            saveFileDialog1.Filter = "RTF files (*.rtf)|*.rtf|TXT files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
-                {
-                    guardar_archivo.WriteLine(richTextBox1.Text);
-                }
+                richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
             }
         }
 
-        private void Cerrar_Click(object sender, EventArgs e)
+        private void Cerrar_Click(object sender, EventArgs e) //Completar
         {
             Environment.Exit(0);
         }
@@ -94,19 +99,17 @@ namespace MiniEditor
 
         private void Tipografia_Click(object sender, EventArgs e)
         {
-            var tipo = fontDialog1.ShowDialog();
-            if (tipo == DialogResult.OK)
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBox1.Font = fontDialog1.Font;
+                richTextBox1.SelectionFont = fontDialog1.Font;
             }
         }
 
         private void Color_Click(object sender, EventArgs e)
         {
-            var colo = colorDialog1.ShowDialog();
-            if (colo == DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBox1.ForeColor = colorDialog1.Color;
+                richTextBox1.SelectionColor = colorDialog1.Color;
             }
         }
 
@@ -124,7 +127,14 @@ namespace MiniEditor
             }
         }
 
-        //https://www.youtube.com/watch?v=eNhBnLJcv78&ab_channel=nicosiored
-        //Mirar
+        private void Imagen_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Imagen |*.jpg;*.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Clipboard.SetImage(Image.FromFile(openFileDialog1.FileName));
+                richTextBox1.Paste();
+            }
+        }
     }
 }
