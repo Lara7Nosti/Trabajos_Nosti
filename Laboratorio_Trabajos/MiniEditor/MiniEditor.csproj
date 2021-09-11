@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insertar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar_como.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deshacer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repetir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cortar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pegar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar_todo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipografía.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
