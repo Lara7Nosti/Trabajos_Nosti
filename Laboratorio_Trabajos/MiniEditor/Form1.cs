@@ -7,18 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MiniEditor
 {
     public partial class Form1 : Form
     {
+        bool estado = false;
+        bool guardo = true;
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        bool estado = false;
-        bool guardo = true;
 
         private void Abrir_Click(object sender, EventArgs e)
         {
