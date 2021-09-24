@@ -1,0 +1,10 @@
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\bin\Debug\12_8_Ejer.exe.config
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\bin\Debug\12_8_Ejer.exe
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\bin\Debug\12_8_Ejer.pdb
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\12_8_Ejer.csprojAssemblyReference.cache
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\_12_8_Ejer.Form1.resources
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\_12_8_Ejer.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\12_8_Ejer.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\12_8_Ejer.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\12_8_Ejer.exe
+C:\Users\Alumno\source\repos\Lara_N\12_8_Ejer\obj\Debug\12_8_Ejer.pdb

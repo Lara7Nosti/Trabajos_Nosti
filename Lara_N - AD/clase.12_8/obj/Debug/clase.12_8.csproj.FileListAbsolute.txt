@@ -1,0 +1,10 @@
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\bin\Debug\clase.12_8.exe.config
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\bin\Debug\clase.12_8.exe
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\bin\Debug\clase.12_8.pdb
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase.12_8.csprojAssemblyReference.cache
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase._12_8.Form1.resources
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase._12_8.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase.12_8.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase.12_8.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase.12_8.exe
+C:\Users\Alumno\source\repos\Lara_N\clase.12_8\obj\Debug\clase.12_8.pdb

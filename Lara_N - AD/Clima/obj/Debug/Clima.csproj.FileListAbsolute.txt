@@ -1,0 +1,4 @@
+C:\Users\Alumno\source\repos\Lara_N\Clima\obj\Debug\Clima.Form1.resources
+C:\Users\Alumno\source\repos\Lara_N\Clima\obj\Debug\Clima.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Lara_N\Clima\obj\Debug\Clima.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Lara_N\Clima\obj\Debug\Clima.csproj.CoreCompileInputs.cache

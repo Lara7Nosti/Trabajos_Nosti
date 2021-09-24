@@ -1,0 +1,30 @@
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe.config
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.pdb
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csprojAssemblyReference.cache
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Form1.resources
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.exe
+C:\Users\Alumno\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.pdb
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe.config
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.pdb
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csprojAssemblyReference.cache
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Form1.resources
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Properties.Resources.resources
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.GenerateResource.cache
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.CoreCompileInputs.cache
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.exe
+C:\Users\lara0_000\source\repos\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.pdb
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe.config
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.exe
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\bin\Debug\13_8_Ejer2.pdb
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Form1.resources
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\_13_8_Ejer2.Properties.Resources.resources
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.exe
+C:\Users\Alumno\Desktop\NO BORRAR Pendrive\Lara_N\13_8_Ejer2\obj\Debug\13_8_Ejer2.pdb
