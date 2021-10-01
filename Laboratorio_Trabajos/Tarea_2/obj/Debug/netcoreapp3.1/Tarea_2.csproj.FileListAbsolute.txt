@@ -1,0 +1,13 @@
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.exe
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.deps.json
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.runtimeconfig.json
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.runtimeconfig.dev.json
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.dll
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\bin\Debug\netcoreapp3.1\Tarea_2.pdb
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.AssemblyInfoInputs.cache
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.AssemblyInfo.cs
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.csproj.CoreCompileInputs.cache
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.dll
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.pdb
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.genruntimeconfig.cache
+C:\Users\lara0_000\source\repos\Nosti\Tarea_2\obj\Debug\netcoreapp3.1\Tarea_2.csprojAssemblyReference.cache
