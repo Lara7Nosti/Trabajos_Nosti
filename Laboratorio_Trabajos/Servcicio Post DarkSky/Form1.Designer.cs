@@ -29,7 +29,7 @@ namespace Servcicio_Post_DarkSky
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.climaHoy = new System.Windows.Forms.PictureBox();
             this.clima1 = new System.Windows.Forms.PictureBox();
             this.clima2 = new System.Windows.Forms.PictureBox();
@@ -76,20 +76,9 @@ namespace Servcicio_Post_DarkSky
             ((System.ComponentModel.ISupportInitialize)(this.clima6)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(580, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ver Clima";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // climaHoy
             // 
-            this.climaHoy.Location = new System.Drawing.Point(12, 41);
+            this.climaHoy.Location = new System.Drawing.Point(12, 12);
             this.climaHoy.Name = "climaHoy";
             this.climaHoy.Size = new System.Drawing.Size(130, 130);
             this.climaHoy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +87,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima1
             // 
-            this.clima1.Location = new System.Drawing.Point(12, 219);
+            this.clima1.Location = new System.Drawing.Point(12, 190);
             this.clima1.Name = "clima1";
             this.clima1.Size = new System.Drawing.Size(90, 90);
             this.clima1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,7 +96,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima2
             // 
-            this.clima2.Location = new System.Drawing.Point(110, 219);
+            this.clima2.Location = new System.Drawing.Point(110, 190);
             this.clima2.Name = "clima2";
             this.clima2.Size = new System.Drawing.Size(90, 90);
             this.clima2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +105,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima3
             // 
-            this.clima3.Location = new System.Drawing.Point(208, 219);
+            this.clima3.Location = new System.Drawing.Point(208, 190);
             this.clima3.Name = "clima3";
             this.clima3.Size = new System.Drawing.Size(90, 90);
             this.clima3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +114,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima4
             // 
-            this.clima4.Location = new System.Drawing.Point(306, 219);
+            this.clima4.Location = new System.Drawing.Point(306, 190);
             this.clima4.Name = "clima4";
             this.clima4.Size = new System.Drawing.Size(90, 90);
             this.clima4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +123,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima5
             // 
-            this.clima5.Location = new System.Drawing.Point(404, 219);
+            this.clima5.Location = new System.Drawing.Point(404, 190);
             this.clima5.Name = "clima5";
             this.clima5.Size = new System.Drawing.Size(90, 90);
             this.clima5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +132,7 @@ namespace Servcicio_Post_DarkSky
             // 
             // clima6
             // 
-            this.clima6.Location = new System.Drawing.Point(502, 219);
+            this.clima6.Location = new System.Drawing.Point(502, 190);
             this.clima6.Name = "clima6";
             this.clima6.Size = new System.Drawing.Size(90, 90);
             this.clima6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +145,7 @@ namespace Servcicio_Post_DarkSky
             this.diaHoy2.Enabled = false;
             this.diaHoy2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.diaHoy2.ForeColor = System.Drawing.Color.Maroon;
-            this.diaHoy2.Location = new System.Drawing.Point(152, 138);
+            this.diaHoy2.Location = new System.Drawing.Point(152, 109);
             this.diaHoy2.Name = "diaHoy2";
             this.diaHoy2.Size = new System.Drawing.Size(160, 24);
             this.diaHoy2.TabIndex = 14;
@@ -167,7 +156,7 @@ namespace Servcicio_Post_DarkSky
             this.gradosHoy.AutoSize = true;
             this.gradosHoy.Font = new System.Drawing.Font("Lucida Sans Unicode", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gradosHoy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gradosHoy.Location = new System.Drawing.Point(144, 87);
+            this.gradosHoy.Location = new System.Drawing.Point(144, 58);
             this.gradosHoy.Name = "gradosHoy";
             this.gradosHoy.Size = new System.Drawing.Size(168, 48);
             this.gradosHoy.TabIndex = 15;
@@ -178,7 +167,7 @@ namespace Servcicio_Post_DarkSky
             this.grados1a.AutoSize = true;
             this.grados1a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados1a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados1a.Location = new System.Drawing.Point(9, 328);
+            this.grados1a.Location = new System.Drawing.Point(9, 299);
             this.grados1a.Name = "grados1a";
             this.grados1a.Size = new System.Drawing.Size(59, 17);
             this.grados1a.TabIndex = 17;
@@ -189,7 +178,7 @@ namespace Servcicio_Post_DarkSky
             this.grados2a.AutoSize = true;
             this.grados2a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados2a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados2a.Location = new System.Drawing.Point(107, 328);
+            this.grados2a.Location = new System.Drawing.Point(107, 299);
             this.grados2a.Name = "grados2a";
             this.grados2a.Size = new System.Drawing.Size(59, 17);
             this.grados2a.TabIndex = 18;
@@ -200,7 +189,7 @@ namespace Servcicio_Post_DarkSky
             this.grados3a.AutoSize = true;
             this.grados3a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados3a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados3a.Location = new System.Drawing.Point(205, 328);
+            this.grados3a.Location = new System.Drawing.Point(205, 299);
             this.grados3a.Name = "grados3a";
             this.grados3a.Size = new System.Drawing.Size(59, 17);
             this.grados3a.TabIndex = 19;
@@ -211,7 +200,7 @@ namespace Servcicio_Post_DarkSky
             this.grados4a.AutoSize = true;
             this.grados4a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados4a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados4a.Location = new System.Drawing.Point(303, 328);
+            this.grados4a.Location = new System.Drawing.Point(303, 299);
             this.grados4a.Name = "grados4a";
             this.grados4a.Size = new System.Drawing.Size(59, 17);
             this.grados4a.TabIndex = 20;
@@ -222,7 +211,7 @@ namespace Servcicio_Post_DarkSky
             this.grados5a.AutoSize = true;
             this.grados5a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados5a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados5a.Location = new System.Drawing.Point(401, 328);
+            this.grados5a.Location = new System.Drawing.Point(401, 299);
             this.grados5a.Name = "grados5a";
             this.grados5a.Size = new System.Drawing.Size(59, 17);
             this.grados5a.TabIndex = 21;
@@ -233,7 +222,7 @@ namespace Servcicio_Post_DarkSky
             this.grados6a.AutoSize = true;
             this.grados6a.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados6a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados6a.Location = new System.Drawing.Point(499, 328);
+            this.grados6a.Location = new System.Drawing.Point(499, 299);
             this.grados6a.Name = "grados6a";
             this.grados6a.Size = new System.Drawing.Size(59, 17);
             this.grados6a.TabIndex = 22;
@@ -244,7 +233,7 @@ namespace Servcicio_Post_DarkSky
             this.zona1.AutoSize = true;
             this.zona1.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Italic);
             this.zona1.ForeColor = System.Drawing.Color.Maroon;
-            this.zona1.Location = new System.Drawing.Point(148, 41);
+            this.zona1.Location = new System.Drawing.Point(148, 12);
             this.zona1.Name = "zona1";
             this.zona1.Size = new System.Drawing.Size(74, 23);
             this.zona1.TabIndex = 23;
@@ -255,7 +244,7 @@ namespace Servcicio_Post_DarkSky
             this.zona2.AutoSize = true;
             this.zona2.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Italic);
             this.zona2.ForeColor = System.Drawing.Color.Maroon;
-            this.zona2.Location = new System.Drawing.Point(148, 64);
+            this.zona2.Location = new System.Drawing.Point(148, 35);
             this.zona2.Name = "zona2";
             this.zona2.Size = new System.Drawing.Size(74, 23);
             this.zona2.TabIndex = 24;
@@ -266,7 +255,7 @@ namespace Servcicio_Post_DarkSky
             this.grados6b.AutoSize = true;
             this.grados6b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados6b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados6b.Location = new System.Drawing.Point(499, 344);
+            this.grados6b.Location = new System.Drawing.Point(499, 315);
             this.grados6b.Name = "grados6b";
             this.grados6b.Size = new System.Drawing.Size(59, 17);
             this.grados6b.TabIndex = 30;
@@ -277,7 +266,7 @@ namespace Servcicio_Post_DarkSky
             this.grados5b.AutoSize = true;
             this.grados5b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados5b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados5b.Location = new System.Drawing.Point(401, 344);
+            this.grados5b.Location = new System.Drawing.Point(401, 315);
             this.grados5b.Name = "grados5b";
             this.grados5b.Size = new System.Drawing.Size(59, 17);
             this.grados5b.TabIndex = 29;
@@ -288,7 +277,7 @@ namespace Servcicio_Post_DarkSky
             this.grados4b.AutoSize = true;
             this.grados4b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados4b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados4b.Location = new System.Drawing.Point(303, 344);
+            this.grados4b.Location = new System.Drawing.Point(303, 315);
             this.grados4b.Name = "grados4b";
             this.grados4b.Size = new System.Drawing.Size(59, 17);
             this.grados4b.TabIndex = 28;
@@ -299,7 +288,7 @@ namespace Servcicio_Post_DarkSky
             this.grados3b.AutoSize = true;
             this.grados3b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados3b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados3b.Location = new System.Drawing.Point(205, 344);
+            this.grados3b.Location = new System.Drawing.Point(205, 315);
             this.grados3b.Name = "grados3b";
             this.grados3b.Size = new System.Drawing.Size(59, 17);
             this.grados3b.TabIndex = 27;
@@ -310,7 +299,7 @@ namespace Servcicio_Post_DarkSky
             this.grados2b.AutoSize = true;
             this.grados2b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados2b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados2b.Location = new System.Drawing.Point(107, 344);
+            this.grados2b.Location = new System.Drawing.Point(107, 315);
             this.grados2b.Name = "grados2b";
             this.grados2b.Size = new System.Drawing.Size(59, 17);
             this.grados2b.TabIndex = 26;
@@ -321,7 +310,7 @@ namespace Servcicio_Post_DarkSky
             this.grados1b.AutoSize = true;
             this.grados1b.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.grados1b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.grados1b.Location = new System.Drawing.Point(9, 344);
+            this.grados1b.Location = new System.Drawing.Point(9, 315);
             this.grados1b.Name = "grados1b";
             this.grados1b.Size = new System.Drawing.Size(59, 17);
             this.grados1b.TabIndex = 25;
@@ -332,7 +321,7 @@ namespace Servcicio_Post_DarkSky
             this.gradosHoy2.AutoSize = true;
             this.gradosHoy2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.gradosHoy2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gradosHoy2.Location = new System.Drawing.Point(149, 181);
+            this.gradosHoy2.Location = new System.Drawing.Point(149, 152);
             this.gradosHoy2.Name = "gradosHoy2";
             this.gradosHoy2.Size = new System.Drawing.Size(59, 17);
             this.gradosHoy2.TabIndex = 32;
@@ -343,7 +332,7 @@ namespace Servcicio_Post_DarkSky
             this.gradosHoy1.AutoSize = true;
             this.gradosHoy1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.gradosHoy1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gradosHoy1.Location = new System.Drawing.Point(149, 165);
+            this.gradosHoy1.Location = new System.Drawing.Point(149, 136);
             this.gradosHoy1.Name = "gradosHoy1";
             this.gradosHoy1.Size = new System.Drawing.Size(59, 17);
             this.gradosHoy1.TabIndex = 31;
@@ -354,7 +343,7 @@ namespace Servcicio_Post_DarkSky
             this.diaHoy1.AutoSize = true;
             this.diaHoy1.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diaHoy1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.diaHoy1.Location = new System.Drawing.Point(13, 178);
+            this.diaHoy1.Location = new System.Drawing.Point(13, 149);
             this.diaHoy1.Name = "diaHoy1";
             this.diaHoy1.Size = new System.Drawing.Size(111, 25);
             this.diaHoy1.TabIndex = 33;
@@ -365,7 +354,7 @@ namespace Servcicio_Post_DarkSky
             this.dia1.AutoSize = true;
             this.dia1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia1.Location = new System.Drawing.Point(9, 312);
+            this.dia1.Location = new System.Drawing.Point(9, 283);
             this.dia1.Name = "dia1";
             this.dia1.Size = new System.Drawing.Size(72, 16);
             this.dia1.TabIndex = 34;
@@ -376,7 +365,7 @@ namespace Servcicio_Post_DarkSky
             this.dia2.AutoSize = true;
             this.dia2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia2.Location = new System.Drawing.Point(108, 312);
+            this.dia2.Location = new System.Drawing.Point(108, 283);
             this.dia2.Name = "dia2";
             this.dia2.Size = new System.Drawing.Size(72, 16);
             this.dia2.TabIndex = 35;
@@ -387,7 +376,7 @@ namespace Servcicio_Post_DarkSky
             this.dia4.AutoSize = true;
             this.dia4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia4.Location = new System.Drawing.Point(303, 312);
+            this.dia4.Location = new System.Drawing.Point(303, 283);
             this.dia4.Name = "dia4";
             this.dia4.Size = new System.Drawing.Size(72, 16);
             this.dia4.TabIndex = 37;
@@ -398,7 +387,7 @@ namespace Servcicio_Post_DarkSky
             this.dia3.AutoSize = true;
             this.dia3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia3.Location = new System.Drawing.Point(204, 312);
+            this.dia3.Location = new System.Drawing.Point(204, 283);
             this.dia3.Name = "dia3";
             this.dia3.Size = new System.Drawing.Size(72, 16);
             this.dia3.TabIndex = 36;
@@ -409,7 +398,7 @@ namespace Servcicio_Post_DarkSky
             this.dia6.AutoSize = true;
             this.dia6.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia6.Location = new System.Drawing.Point(499, 312);
+            this.dia6.Location = new System.Drawing.Point(499, 283);
             this.dia6.Name = "dia6";
             this.dia6.Size = new System.Drawing.Size(72, 16);
             this.dia6.TabIndex = 39;
@@ -420,7 +409,7 @@ namespace Servcicio_Post_DarkSky
             this.dia5.AutoSize = true;
             this.dia5.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dia5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dia5.Location = new System.Drawing.Point(400, 312);
+            this.dia5.Location = new System.Drawing.Point(400, 283);
             this.dia5.Name = "dia5";
             this.dia5.Size = new System.Drawing.Size(72, 16);
             this.dia5.TabIndex = 38;
@@ -430,7 +419,7 @@ namespace Servcicio_Post_DarkSky
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox1.Location = new System.Drawing.Point(492, 138);
+            this.textBox1.Location = new System.Drawing.Point(492, 109);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 40;
@@ -439,7 +428,7 @@ namespace Servcicio_Post_DarkSky
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox2.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox2.Location = new System.Drawing.Point(492, 164);
+            this.textBox2.Location = new System.Drawing.Point(492, 135);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 41;
@@ -449,7 +438,7 @@ namespace Servcicio_Post_DarkSky
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(422, 138);
+            this.label1.Location = new System.Drawing.Point(422, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 42;
@@ -460,7 +449,7 @@ namespace Servcicio_Post_DarkSky
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(407, 164);
+            this.label2.Location = new System.Drawing.Point(407, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 18);
             this.label2.TabIndex = 43;
@@ -470,19 +459,20 @@ namespace Servcicio_Post_DarkSky
             // 
             this.Coordenadas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Coordenadas.ForeColor = System.Drawing.Color.Maroon;
-            this.Coordenadas.Location = new System.Drawing.Point(492, 186);
+            this.Coordenadas.Location = new System.Drawing.Point(492, 157);
             this.Coordenadas.Name = "Coordenadas";
             this.Coordenadas.Size = new System.Drawing.Size(100, 23);
             this.Coordenadas.TabIndex = 44;
             this.Coordenadas.Text = "Coordenadas";
             this.Coordenadas.UseVisualStyleBackColor = false;
+            this.Coordenadas.Click += new System.EventHandler(this.Coordenadas_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(605, 369);
+            this.ClientSize = new System.Drawing.Size(605, 336);
             this.Controls.Add(this.Coordenadas);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -520,10 +510,11 @@ namespace Servcicio_Post_DarkSky
             this.Controls.Add(this.clima2);
             this.Controls.Add(this.clima1);
             this.Controls.Add(this.climaHoy);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Clima";
+            this.Text = "Cual Es El Clima Ahora?";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.climaHoy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clima1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clima2)).EndInit();
@@ -537,8 +528,6 @@ namespace Servcicio_Post_DarkSky
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox climaHoy;
         private System.Windows.Forms.PictureBox clima1;
         private System.Windows.Forms.PictureBox clima2;
