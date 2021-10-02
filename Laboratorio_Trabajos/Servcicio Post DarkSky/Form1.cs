@@ -159,6 +159,7 @@ namespace Servcicio_Post_DarkSky
                     MessageBox.Show("No existe esa ubicacion", "Donde?", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     latitud = "-34.6119666";
                     longitud = "-58.4030375";
+                    ubi = true;
                 }
                 else
                 {
